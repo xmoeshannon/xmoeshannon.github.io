@@ -1,0 +1,646 @@
+:root { 
+  --black: #000000;
+  --blumine: #176287;
+  --mine-shaft: #2f3038;
+  --white: #ffffff;
+  --white-2: #ffffffcc;
+ 
+  --font-size-l: 30px;
+  --font-size-m: 24px;
+  --font-size-s: 20px;
+  --font-size-xl: 36px;
+  --font-size-xxl: 60px;
+ 
+  --font-family-inter: "Inter", Helvetica;
+  --font-family-poppins: "Poppins", Helvetica;
+}
+.poppins-normal-white-20px {
+  color: var(--white);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.poppins-normal-white-24px {
+  color: var(--white);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.poppins-medium-white-20px {
+  color: var(--white-2);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.poppins-normal-white-20px-2 {
+  color: var(--white-2);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.poppins-normal-white-60px {
+  color: var(--white);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.poppins-medium-white-24px {
+  color: var(--white-2);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.poppins-normal-white-24px-2 {
+  color: var(--white-2);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.poppins-bold-white-24px {
+  color: var(--white);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.inter-medium-white-30px {
+  color: var(--white-2);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.poppins-normal-white-30px {
+  color: var(--white);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+.content {
+  padding: 5% 5%;
+  /* Used to center the section */
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+  font-family:'Poppins';
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 70vh;
+  width: auto;
+  margin: 0 auto;
+  border-radius: 12px;
+  
+}
+
+.image img{
+height:50vh;
+margin:50px auto
+}
+.content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0  12px 12px 0;
+  color: #fff;
+}
+.content h2{
+  text-transform: uppercase;
+  font-size: 36px;
+  letter-spacing: 6px;
+  opacity: 0.9;
+}
+.content span{
+  height: 0.5px;
+  width: 80px;
+  background: #777;
+  margin: 30px 0;
+}
+.content p{
+  padding-bottom: 15px;
+  font-weight: 300;
+  opacity: 0.7;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.7;
+  color:#ffffff
+}
+.links{
+  margin: 15px 0;
+  font-size: larger;
+}
+.links li{
+  border: 2px solid #4158D0;
+  list-style: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  width: 160px;
+  text-align: center;
+}
+.links li a{
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+}
+.links li:hover{
+  border-color: #C850C0;
+}
+
+.vertical-line{
+  height: 30px;
+  width: 3px;
+  background: #C850C0;
+  margin: 0 auto;
+}
+
+
+/*
+.answer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.answer-text {
+  text-align: center;
+}
+
+.answer-text p {
+  margin-top: 20px;
+}
+
+/* options */
+.options {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.option {
+  max-width: 250px;
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--blumine);
+  font-size: var(--font-size-m);
+  font-family: var(--font-family-poppins);
+}
+
+.option p {
+  margin-top: 10px;
+}
+
+.option:hover{
+  color: white;
+}
+
+/* screen - result-page */
+
+.result-page {
+  align-items: flex-end;
+  background-color: var(--mine-shaft);
+  border: 1px none;
+  display: flex;
+  height: auto;
+  width: auto;
+}
+
+.result-page .navbar-link-container {
+  height: 99px;
+  margin-right: 43px;
+  margin-top: 42px;
+  position: relative;
+  width: 478px;
+}
+
+.result-page .navbar-link-about-us {
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 184px;
+}
+
+.result-page .navbar-link-playlists {
+  left: 108px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 152px;
+}
+
+.result-page .navbar-link-support {
+  left: 217px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 152px;
+}
+
+.result-page .navbar-link-place {
+  cursor: pointer;
+  left: 326px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 152px;
+}
+
+.result-page .flex-row {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  margin-right: -110px;
+  margin-top: 108px;
+  width: auto;
+}
+
+.result-page .d-ng-tr-n-qu-c-_fsa44-mu-xn4-unsplash-1 {
+  height: 452px;
+  width: 440px;
+}
+
+.result-page .overlap-group1 {
+  height: 360px;
+  margin-top: 14.0px;
+  position: relative;
+  width: 850px;
+}
+
+.result-page .find-your-new-groove {
+  -webkit-text-stroke: 1px var(--black);
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-shadow: 0px 4px 4px #00000040;
+  top: 0;
+  width: 848px;
+}
+
+.result-page .hi-this-is-the-play {
+  left: 2px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 146px;
+  width: 848px;
+}
+
+.result-page .download-and-share {
+  left: 1px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 253px;
+  width: 848px;
+}
+
+.result-page .overlap-group {
+  height: 170px;
+  margin-right: -640px;
+  margin-top: 261px;
+  position: relative;
+  width: 1920px;
+}
+
+.result-page .rectangle-3 {
+  background-color: #070707;
+  border: 1px none;
+  height: 118px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1920px;
+}
+
+.result-page .cm523-at-boston-university-2022 {
+  left: 650px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 63px;
+  width: 848px;
+}
+/* screen - landing-page */
+
+.landing-page {
+  align-items: flex-end;
+  background-color: var(--mine-shaft);
+  border: 1px none;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  overflow: hidden;
+  width: 1280px;
+}
+
+.landing-page .flex-row {
+  align-items: flex-start;
+  align-self: center;
+  display: flex;
+  height: 111px;
+  margin-left: 65.0px;
+  margin-top: 34px;
+  min-width: 1127px;
+}
+
+.landing-page .overlap-group-container {
+  height: 60px;
+  margin-top: 4px;
+  position: relative;
+  width: 71px;
+}
+
+.landing-page .logo-container {
+  height: 60px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 71px;
+}
+
+.landing-page .logo {
+  height: 60px;
+  left: 2px;
+  position: absolute;
+  top: 0;
+  width: 60px;
+}
+
+.landing-page .logo-1 {
+  align-items: flex-start;
+  border: 1px none;
+  display: flex;
+  height: 30px;
+  left: 0;
+  padding: 0 5px;
+  position: absolute;
+  top: 13px;
+  width: 71px;
+}
+
+.landing-page .line-container {
+  height: 30px;
+  position: relative;
+  width: 55px;
+}
+
+.landing-page .line-1 {
+  height: 20px;
+  left: 0;
+  position: absolute;
+  top: 10px;
+  width: 11px;
+}
+
+.landing-page .line-8 {
+  height: 20px;
+  left: 44px;
+  position: absolute;
+  top: 10px;
+  width: 11px;
+}
+
+.landing-page .line-2 {
+  height: 20px;
+  left: 6px;
+  position: absolute;
+  top: 10px;
+  width: 11px;
+}
+
+.landing-page .line-7 {
+  height: 20px;
+  left: 38px;
+  position: absolute;
+  top: 10px;
+  width: 11px;
+}
+
+.landing-page .line-3 {
+  height: 25px;
+  left: 12px;
+  position: absolute;
+  top: 5px;
+  width: 11px;
+}
+
+.landing-page .line-6 {
+  height: 25px;
+  left: 32px;
+  position: absolute;
+  top: 5px;
+  width: 11px;
+}
+
+.landing-page .line-4 {
+  height: 30px;
+  left: 18px;
+  position: absolute;
+  top: 0;
+  width: 11px;
+}
+
+.landing-page .line-5 {
+  height: 30px;
+  left: 25px;
+  position: absolute;
+  top: 0;
+  width: 11px;
+}
+
+.landing-page .find-your-new-groove {
+  align-self: flex-end;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 5px;
+  min-height: 99px;
+  width: 248px;
+}
+
+.landing-page .overlap-group6 {
+  height: 99px;
+  margin-left: 433px;
+  position: relative;
+  width: 370px;
+}
+
+.landing-page .about-us {
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 184px;
+}
+
+.landing-page .playlists {
+  left: 109px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 152px;
+}
+
+.landing-page .support {
+  left: 218px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 152px;
+}
+
+.landing-page .overlap-group4 {
+  height: 601px;
+  margin-right: -109px;
+  margin-top: 83px;
+  position: relative;
+  width: 1314px;
+}
+
+.landing-page .alireza-attari-sb-ia {
+  height: 599px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 2px;
+  width: 555px;
+}
+
+.landing-page .find-your-new-groove-1 {
+  -webkit-text-stroke: 1px var(--black);
+  left: 466px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-shadow: 0px 4px 4px #00000040;
+  top: 0;
+  width: 848px;
+}
+
+.landing-page .match-you-with-a-pla {
+  left: 467px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 87px;
+  width: 682px;
+}
+
+.landing-page .button {
+  align-items: flex-start;
+  cursor: pointer;
+  display: flex;
+  height: 114px;
+  left: 458px;
+  min-width: 306px;
+  position: absolute;
+  top: 168px;
+}
+
+.landing-page .overlap-group2 {
+  height: 114px;
+  position: relative;
+  width: 304px;
+}
+
+.landing-page .rectangle-1 {
+  background-color: var(--blumine);
+  border: 1px none;
+  border-radius: 10px;
+  height: 109px;
+  left: 2px;
+  position: absolute;
+  top: 5px;
+  width: 302px;
+}
+
+.landing-page .try-now {
+  height: 114px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 304px;
+}
+
+.landing-page .cm523-at-boston-university-2022 {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-right: -220px;
+  margin-top: 196px;
+  min-height: 107px;
+  width: 848px;
+}
+
+.options button {
+  max-width: 250px;
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--blumine);
+  font-size: var(--font-size-m);
+  font-family: var(--font-family-poppins);
+}
+
+.coloredbox p{
+    padding-bottom: 15px;
+    font-weight: 300;
+    text-align: left;
+    opacity: 0.7;
+    width: auto;
+    margin: 0 auto;
+    line-height: 1.7;
+    color:#ffffff;
+    font-family:'Poppins';
+}
+
+.coloredbox h2{
+  color: var(--white);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
