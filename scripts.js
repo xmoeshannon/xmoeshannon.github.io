@@ -1,6 +1,6 @@
 const numberOfQuestions = 5
 // javascript object representing genres and their corresponding counts...
-var genreObj = {
+let genreObj = {
     'classical': 0,
     'country': 0,
     'dance' : 0,
@@ -13,7 +13,7 @@ Init();
 
 function Init() {
     // hide all question DIVs
-    for (var i = 1; i <= numberOfQuestions; i++) {
+    for (let i = 1; i <= numberOfQuestions; i++) {
         const id = document.getElementById('q' + i.toString());
         id.style.display = 'none';
     }
