@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    var i = 0;
+    let i = 0;
     document.querySelector('.menu').addEventListener('click', function() {
         if (i == 0) {
             document.querySelector('nav').style.display = 'flex'
